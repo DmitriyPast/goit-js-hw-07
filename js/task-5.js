@@ -15,4 +15,3 @@ changeBtn.addEventListener("click", () => {
   display.textContent = color;
 });
 console.log(`click`);
-//
