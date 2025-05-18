@@ -8,4 +8,4 @@ const formInputHandle = (ie) =>
     : "Anonymous");
 // console.log(ie.target.value);
 
-document.addEventListener("input", formInputHandle);
+input.addEventListener("input", formInputHandle);
