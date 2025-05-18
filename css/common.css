@@ -183,8 +183,7 @@ button {
   color: #fff;
 }
 
-button:hover,
-button:focus {
+button:hover {
   background: #6c8cff;
 }
 
