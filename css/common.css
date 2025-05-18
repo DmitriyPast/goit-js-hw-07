@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
@@ -8,12 +12,14 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
   color: #212121;
-  line-height: 1.5;
+  line-height: 1.5; /* line-height: 24px; */
 
+  margin: 24px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 /* #region task-1 */
@@ -25,10 +31,16 @@ li {
   list-style: none;
 }
 
+ul#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 li.item {
   background-color: #f6f6fe;
   border-radius: 8px;
-  padding: 8px;
+  padding: 16px;
   /* width: 392px;
   height: 264px; */
 }
@@ -36,10 +48,10 @@ li.item {
 li.item > h2 {
   /* font-weight: 600;
   font-size: 24px; */
-  margin: 16px 0;
+  /* margin: 0; */
+  margin: 0 0 16px 0;
 
   line-height: 1.33333; /* line-height: 32px; */
-  color: #2e2f42;
 }
 li.item > ul {
   display: flex;
@@ -60,8 +72,6 @@ li.item > ul > li {
 
   /* font-weight: 400; */
   /* font-size: 16px; */
-  /* line-height: 1.5; line-height: 24px; */
-  color: #2e2f42;
 }
 /* #endregion */
 
@@ -83,4 +93,109 @@ li.item > ul > li {
   width: 360px;
   height: 300px;
 }
+/* #endregion */
+
+/* #region task-3 */
+input {
+  display: block;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 100%;
+  width: 360px;
+  /*height: 40px; */
+
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-emphasis-color: #fff;
+}
+
+input:hover {
+  outline: none;
+  border: 1px solid #000;
+}
+
+input:active,
+input:focus {
+  outline: none;
+  border: 1px solid #808080;
+
+  color: #2e2f42;
+}
+
+input#name-input {
+  margin: 16px 0;
+}
+
+/* span#name-output {
+  font-weight: 600;
+  font-size: 24px;
+
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+} */
+
+h1 {
+  font-size: 24px;
+
+  line-height: 1.33333; /* line-height: 32px; */
+  letter-spacing: 0.04em;
+}
+/* #endregion */
+
+/* #region task-4 */
+form.login-form {
+  /*  */
+}
+
+form.login-form > label {
+  /*  */
+  display: block;
+  margin-top: 8px;
+}
+form.login-form > label > input {
+  /*  */
+  margin-top: 8px;
+}
+
+button {
+  background: #4e75ff;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px; */
+  font-family: "Montserrat", sans-serif;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  /* height: 40px; */
+
+  /* font-weight: 500; */
+  font-size: 16px;
+
+  line-height: 1.5; /* line-height: 24px; */
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button:hover,
+button:focus {
+  background: #6c8cff;
+}
+
+form.login-form > button {
+  margin-top: 16px;
+}
+/* #endregion */
+
+/* #region task-5 */
 /* #endregion */
