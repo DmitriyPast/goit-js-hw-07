@@ -150,17 +150,14 @@ h1 {
 /* #endregion */
 
 /* #region task-4 */
-form.login-form {
-  /*  */
-}
+/* form.login-form {
+} */
 
 form.login-form > label {
-  /*  */
   display: block;
   margin-top: 8px;
 }
 form.login-form > label > input {
-  /*  */
   margin-top: 8px;
 }
 
@@ -176,7 +173,6 @@ button {
   font-family: "Montserrat", sans-serif;
   border-radius: 8px;
   padding: 8px 16px;
-  width: 86px;
   /* height: 40px; */
 
   /* font-weight: 500; */
@@ -194,8 +190,25 @@ button:focus {
 
 form.login-form > button {
   margin-top: 16px;
+  width: 86px;
 }
 /* #endregion */
 
 /* #region task-5 */
+div.widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+
+  border-radius: 8px;
+  padding: 100px 88px;
+  /* width: 345px; */
+  /* height: 280px; */
+}
+
+button.change-color {
+  width: 148px;
+}
 /* #endregion */

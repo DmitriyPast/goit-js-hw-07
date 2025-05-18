@@ -14,4 +14,4 @@ changeBtn.addEventListener("click", () => {
   body.style.backgroundColor = color;
   display.textContent = color;
 });
-console.log(`click`);
+// console.log(`click`);
